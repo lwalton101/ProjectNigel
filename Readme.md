@@ -25,3 +25,7 @@ This will be the repo for all Project Nigel related code.
 
 ## Problems
  - If the arduinos controlling the motors are radio controlled, how does python talk to them? Serial, radio or magic?
+
+## Aims
+ - AVOID HACKY WORKAROUNDS, just be a good boy
+ - Code should be unit tested, lets do this one properly

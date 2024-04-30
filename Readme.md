@@ -22,3 +22,6 @@ This will be the repo for all Project Nigel related code.
     - Display information such as subtitles for what nigel is saying on screen
     - Change config(e.g default music provider)
     - Soundboard page
+
+## Problems
+ - If the arduinos controlling the motors are radio controlled, how does python talk to them? Serial, radio or magic?

@@ -1,7 +1,14 @@
-from intent.train import RawData, read_train_json_file
+import os
+os.environ["TF_USE_LEGACY_KERAS"] ="1"
+
+from intent.train import RawData, JointIntentAndSlotFillingModel, read_train_json_file
 from intent.train.slot import encode_slots
 import tensorflow as tf
 from transformers import AutoTokenizer
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.losses import SparseCategoricalCrossentropy
+from tensorflow.keras.metrics import SparseCategoricalAccuracy
+
 
 def encode_texts(tokenizer, texts):
     return tokenizer(texts, padding=True, truncation=True, return_tensors="tf")
@@ -47,3 +54,18 @@ max_len = len(encoded_texts["input_ids"][0])
 all_slots = [td.slots for td in train_data]
 all_texts = [td.text for td in train_data]
 encoded_slots = encode_slots(all_slots, all_texts, tokenizer, slot_map, max_len)
+
+joint_model = JointIntentAndSlotFillingModel(model_name,
+    intent_num_labels=len(intent_map), slot_num_labels=len(slot_map))
+
+opt = Adam(learning_rate=3e-5, epsilon=1e-08)
+losses = [SparseCategoricalCrossentropy(from_logits=True),
+          SparseCategoricalCrossentropy(from_logits=True)]
+metrics = [SparseCategoricalAccuracy("accuracy_intent"),SparseCategoricalAccuracy("accuracy_slot")]
+# compile model
+joint_model.compile(optimizer=opt, loss=losses, metrics=metrics)
+
+x = {"input_ids": encoded_texts["input_ids"], "token_type_ids": encoded_texts["token_type_ids"],  "attention_mask": encoded_texts["attention_mask"]}
+
+history = joint_model.fit(
+    x, (encoded_slots, encoded_intents), epochs=1, batch_size=32, shuffle=True)

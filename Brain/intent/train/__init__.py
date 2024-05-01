@@ -1,1 +1,2 @@
 from intent.train.raw_data import *
+from intent.train.joint_intent_and_slot_filling_model import JointIntentAndSlotFillingModel

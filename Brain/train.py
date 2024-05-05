@@ -11,6 +11,7 @@ from keras import layers,losses
 batch_size = 32
 seed = 42
 
+modelName = input("Enter model name: ")
 raw_train_ds = tf.keras.utils.text_dataset_from_directory(
     'intent/train/dataset/',
     batch_size=batch_size,
@@ -109,6 +110,12 @@ examples = tf.constant([
 
 predictions = export_model.predict(examples)
 j = [raw_train_ds.class_names[prediction.argmax()] for prediction in predictions]
-export_model.export("./intent/train/model")
+if not os.path.exists("./intent/train/models"):
+  os.mkdir("./intent/train/models")
+modelLoc = f"./intent/train/models/{modelName}"
+export_model.export(modelLoc)
+
+with open(f"{modelLoc}/intents.txt", "w") as f:
+  f.write("\n".join(raw_train_ds.class_names))
 
 

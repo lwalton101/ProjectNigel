@@ -18,5 +18,17 @@ class IntentDetector:
         input_tensor = tf.reshape(input_tensor, shape=(1,)) 
         evaluation = self.layer(input_tensor)
         return self.intents[tf.argmax(evaluation, axis=1).numpy()[0]]
+    
+    def detect_intents(self, text_inputs: str) -> str:
+        input_tensor = tf.constant(text_inputs, dtype=tf.string)
+        input_tensor = tf.reshape(input_tensor, shape=(len(text_inputs),)) 
+        evaluation = self.layer(input_tensor)
+        results = []
+        for x in range(len(text_inputs)):
+            resultArr = evaluation[x]
+            highestIndex = tf.argmax(resultArr, axis=0)
+            results.append(self.intents[highestIndex])
+
+        return results
         
         

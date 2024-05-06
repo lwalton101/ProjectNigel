@@ -21,7 +21,7 @@ def execute_file(file_name):
 
 # Main function
 def main():
-    examples_dir = "examples"
+    examples_dir = "src/examples"
     py_files = list_py_files(examples_dir)
 
     print("Available Python files to execute:")

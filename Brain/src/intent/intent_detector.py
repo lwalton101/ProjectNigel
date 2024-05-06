@@ -7,7 +7,7 @@ class IntentDetector:
         
     def load_model(self, model_name: str) -> None:
         self.model_name = model_name
-        self.model_path = f"./intent/train/models/{model_name}"
+        self.model_path = f"./src/intent/train/models/{model_name}"
         self.layer = layers.TFSMLayer(self.model_path)
         self.intents = []
         with open(f"{self.model_path}/intents.txt") as f:

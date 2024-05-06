@@ -12,7 +12,7 @@ seed = 42
 
 modelName = input("Enter model name: ")
 raw_train_ds = tf.keras.utils.text_dataset_from_directory(
-    'intent/train/dataset/',
+    'src/intent/train/dataset/',
     batch_size=batch_size,
     validation_split=0.2,
     subset='training',
@@ -24,7 +24,7 @@ for label_name in raw_train_ds.class_names:
     i += 1
 
 raw_val_ds = tf.keras.utils.text_dataset_from_directory(
-    'intent/train/dataset/',
+    'src/intent/train/dataset/',
     batch_size=batch_size,
     validation_split=0.2,
     subset='validation',

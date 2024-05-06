@@ -1,0 +1,1 @@
+from intent.intent_detector import IntentDetector

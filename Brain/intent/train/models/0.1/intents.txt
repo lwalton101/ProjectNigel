@@ -1,7 +1,0 @@
-add_to_playlist
-book_restaurant
-get_weather
-play_music
-rate_book
-search_creative_work
-search_screening_event

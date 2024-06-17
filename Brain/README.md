@@ -1,11 +1,14 @@
 ## Threads
 
 Voice input thread
+Intent Detection thread
+Intent execution thread
+Camera thread(bit far ahead)
 
+When voice input:
+  stop the intent detection and execution and start the detection again
 
-
-##Questions
-Is any other language viable?
+## Is any other language viable?
 python is quite slow and I do not enjoy using it.
 we can train the ai in python, but run in other langauges. we need to do this to use the Bert Models
 

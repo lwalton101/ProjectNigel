@@ -1,23 +1,4 @@
 label,text
-Greeting,Hello
-Greeting,Hi
-Greeting,Whats Up?
-Greeting,Good Morning
-Greeting,Good Afternoon
-Greeting,Hey
-Greeting,Greetings
-Greeting,Good evening
-Greeting,Hiya
-Greeting,Yo
-Greeting,Sup?
-Greeting,Yooooooooo
-Greeting,Hi there
-Greeting,Hello there
-Greeting,Seasons Greetings
-Greeting,"Hello, my friend"
-Greeting,"Good day, I trust you have been well?"
-Greeting,"Hey, how are you doing?"
-Greeting,Mornin
 PlayMusic,Play the song Blinding Lights by The Weeknd on Spotify
 PlayMusic,I want to listen to Taylor Swift's new album on Apple Music
 PlayMusic,Play the Chill Vibes playlist
@@ -128,3 +109,100 @@ PlayMusic,Play the track Rolling in the Deep by Adele
 PlayMusic,Put on my evening playlist
 PlayMusic,Play my morning mix on Apple Music
 PlayMusic,Play some EDM on Amazon Music
+Greeting,hello
+Greeting,hi there
+Greeting,good morning
+Greeting,good afternoon
+Greeting,good evening
+Greeting,hey
+Greeting,what's up
+Greeting,howdy
+Greeting,hi
+Greeting,greetings
+Greeting,hey there
+Greeting,hello there
+Greeting,yo
+Greeting,hiya
+Greeting,hey hey
+Greeting,hiya there
+Greeting,morning
+Greeting,afternoon
+Greeting,evening
+Greeting,hey buddy
+Greeting,hi friend
+Greeting,hello friend
+Greeting,hi folks
+Greeting,hey folks
+Greeting,good day
+Greeting,hey you
+Greeting,hi stranger
+Greeting,hello stranger
+Greeting,hi team
+Greeting,hi everyone
+Greeting,hi guys
+Greeting,hello guys
+Greeting,hey folks
+Greeting,hey team
+Greeting,hi team
+Greeting,hi all
+Greeting,hi pals
+Greeting,hi mate
+Greeting,hi buddy
+Greeting,hello mate
+Greeting,hello buddy
+Greeting,hey mate
+Greeting,hey buddy
+Greeting,hi dear
+Greeting,hello dear
+Greeting,hey dear
+Greeting,hi lovely
+Greeting,hello lovely
+Greeting,hey lovely
+Greeting,hi sweetie
+Greeting,hello sweetie
+Greeting,hey sweetie
+Greeting,hi love
+Greeting,hello love
+Greeting,hey love
+Greeting,hi honey
+Greeting,hello honey
+Greeting,hey honey
+Greeting,hi darling
+Greeting,hello darling
+Greeting,hey darling
+Greeting,hi cutie
+Greeting,hello cutie
+Greeting,hey cutie
+Greeting,hi handsome
+Greeting,hello handsome
+Greeting,hey handsome
+Greeting,hi beautiful
+Greeting,hello beautiful
+Greeting,hey beautiful
+Greeting,hi princess
+Greeting,hello princess
+Greeting,hey princess
+Greeting,hi queen
+Greeting,hello queen
+Greeting,hey queen
+Greeting,hi king
+Greeting,hello king
+Greeting,hey king
+Greeting,hi superstar
+Greeting,hello superstar
+Greeting,hey superstar
+Greeting,hi champ
+Greeting,hello champ
+Greeting,hey champ
+Greeting,hi legend
+Greeting,hello legend
+Greeting,hey legend
+Greeting,how are you
+Greeting,how's it going
+Greeting,what's new with you
+Greeting,how have you been
+Greeting,how's everything going
+Greeting,how's your day been
+Greeting,how's life treating you
+Greeting,how are things going
+Greeting,what have you been up to

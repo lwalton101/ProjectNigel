@@ -1,1 +1,3 @@
 intent/train/dataset
+intent/train/imdb_test
+intent/train/IntentDetection

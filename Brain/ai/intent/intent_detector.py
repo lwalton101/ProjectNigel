@@ -7,7 +7,7 @@ class IntentDetector:
         self.tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
         
     def load_model(self, model_name: str) -> None:
-        self.model = TFAutoModelForSequenceClassification.from_pretrained(f"./Brain/ai/intent/models/{model_name}")
+        self.model = TFAutoModelForSequenceClassification.from_pretrained(model_name)
         pass
         
     def detect_intent(self, text_input: str):

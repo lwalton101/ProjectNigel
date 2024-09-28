@@ -1,1 +1,1 @@
-from intent.intent_detector import IntentDetector
+from .intent_detector import IntentDetector

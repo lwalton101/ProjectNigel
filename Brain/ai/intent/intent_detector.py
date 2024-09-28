@@ -13,4 +13,6 @@ class IntentDetector:
     def detect_intent(self, text_input: str):
         inputs = self.tokenizer(text_input, return_tensors="tf")
         outputs = self.model(**inputs).logits
+        predicted_class_id = int(tf.math.argmax(outputs, axis=-1)[0])
+        self.model.config.id2label[predicted_class_id]
         return outputs

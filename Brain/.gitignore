@@ -1,2 +1,4 @@
 ai/intent/train/Project_Nigel_Intent_Detection
 ai/intent/models
+ai/slot/train/Project_Nigel_Slot_Filling
+ai/slot/models

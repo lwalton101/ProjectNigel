@@ -8,7 +8,7 @@ class SlotFiller:
         self.tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
         
     def load_model(self, model_name: str) -> None:
-        self.classifier = pipeline("ner", model="Nicknotname/Project_Nigel_Slot_Filling")
+        self.classifier = pipeline("ner", model=model_name)
         pass
     
     def combine_bi_result(self, result):

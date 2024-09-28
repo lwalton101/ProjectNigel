@@ -1,4 +1,2 @@
-intent/train/dataset
-intent/train/imdb_test
-intent/train/IntentDetection
-intent/train/.ipynb_checkpoints
+ai/intent/train/Project_Nigel_Intent_Detection
+ai/intent/models
